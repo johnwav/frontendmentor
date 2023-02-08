@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className='Container'>
-        <img className='qr-image' src={qr}></img>
+        <img className='qr-image' alt='qrimage' src={qr}></img>
         <div className='Title'>
           Improve your front-end skills by building projects
         </div>
