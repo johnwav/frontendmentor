@@ -1,6 +1,6 @@
-.home{
-    width: screen;
-    height: 100%;
+.home {
+  width: screen;
+  height: 100%;
 }
 .bodyContainer {
   display: flex;
@@ -39,6 +39,30 @@
   align-items: center;
   width: 235px;
   letter-spacing: 12px;
+}
+
+.shopBtn :hover {
+  color: hsl(0, 0%, 63%);
+}
+
+.btngrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 840px;
+  top: 454px;
+}
+
+.pagebtn {
+  width: 84px;
+  height: 80px;
+  background: black;
+  color: wheat;
+}
+
+.btngrp :hover {
+  background: hsl(0, 0%, 63%);
 }
 
 .bottomSection {

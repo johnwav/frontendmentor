@@ -1,18 +1,40 @@
 import "./Homepage.moudle.css";
 import topLeftImage from "./assets/desktop-image-hero-1.jpg";
+import topLeftImage2 from "./assets/desktop-image-hero-2.jpg";
 import bottomLeftImage from "./assets/image-about-dark.jpg";
 import bottomRightImage from "./assets/image-about-light.jpg";
+import left from "./assets/icon-angle-left.svg";
+import right from "./assets/icon-angle-right.svg";
 import arrow from "./assets/icon-arrow.svg";
 import Navbar from "./components/Navbar";
+import { useState } from "react";
 
 function App() {
+
+  const [pageState, SetPageState] = useState(0)
+  const handleDecrement = () => {
+   if (pageState > 0) {
+    SetPageState(pageState -1)
+   }
+  }
+  const handleIncrement = () => {
+    if (pageState < 2) {
+      SetPageState(pageState +1)
+    }
+  }
+
+
+
+  
   return (
     <div className="home">
+    
       <Navbar />
       <div className="bodyContainer">
         <section className="topSection">
           <img src={topLeftImage}></img>
           <div className="topRightInfo">
+            {pageState}
             <div className="infoBox">
               <div className="heading">
                 Discover innovative ways to decorate
@@ -27,6 +49,15 @@ function App() {
               <button className="shopBtn">
                 <div>SHOP NOW</div>
                 <img src={arrow}></img>
+              </button>
+            </div>
+            <div className="btngrp">
+              <button className="pagebtn"
+              onClick={handleDecrement}>
+                <img src={left}></img>
+              </button>
+              <button className="pagebtn" onClick={handleIncrement}>
+                <img src={right}></img>
               </button>
             </div>
           </div>
