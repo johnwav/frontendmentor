@@ -12,7 +12,6 @@ nav {
 
 .navItems {
   padding-left: 60px;
-  text-decoration: none;
   list-style-type: none;
   font-size: 15px;
   display: flex;
@@ -24,3 +23,23 @@ nav {
   font-weight: 500;
 }
 
+.navItem {
+  cursor: pointer;
+}
+
+.navItem::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+.navItem:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  }

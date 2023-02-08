@@ -8,7 +8,7 @@ export default function Navbar() {
         <img src={logo} alt={"room"}></img>
       </div>
       <ul className={styles.navItems}>
-        <li>home</li>
+        <li className={styles.navItem}>home</li>
         <li>shop</li>
         <li>about</li>
         <li>contact</li>

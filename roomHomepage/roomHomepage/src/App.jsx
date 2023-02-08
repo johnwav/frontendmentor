@@ -1,6 +1,7 @@
 import "./Homepage.moudle.css";
 import topLeftImage from "./assets/desktop-image-hero-1.jpg";
 import topLeftImage2 from "./assets/desktop-image-hero-2.jpg";
+import topLeftImage3 from "./assets/desktop-image-hero-3.jpg";
 import bottomLeftImage from "./assets/image-about-dark.jpg";
 import bottomRightImage from "./assets/image-about-light.jpg";
 import left from "./assets/icon-angle-left.svg";
@@ -10,50 +11,67 @@ import Navbar from "./components/Navbar";
 import { useState } from "react";
 
 function App() {
-
-  const [pageState, SetPageState] = useState(0)
+  const [pageState, SetPageState] = useState(0);
   const handleDecrement = () => {
-   if (pageState > 0) {
-    SetPageState(pageState -1)
-   }
-  }
+    if (pageState > 0) {
+      SetPageState(pageState - 1);
+    }
+  };
   const handleIncrement = () => {
     if (pageState < 2) {
-      SetPageState(pageState +1)
+      SetPageState(pageState + 1);
     }
-  }
+  };
 
+  const copy = [
+    {
+      heading: "Discover innovative ways to decorate",
+      subheading:
+        "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
+    },
+    {
+      heading: "Manufactured with the best materials",
+      subheading:
+        "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office. ",
+    },
+    {
+      heading: "Discover innovative ways to decorate",
+      subheading:
+        "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
+    },
+  ];
 
-
-  
   return (
     <div className="home">
-    
       <Navbar />
       <div className="bodyContainer">
         <section className="topSection">
-          <img src={topLeftImage}></img>
+          {pageState === 0 ? (
+            <>
+              <img src={topLeftImage}></img>
+            </>
+          ) : null}
+          {pageState === 1 ? (
+            <>
+              <img src={topLeftImage2}></img>
+            </>
+          ) : null}
+          {pageState === 2 ? (
+            <>
+              <img src={topLeftImage3}></img>
+            </>
+          ) : null}
           <div className="topRightInfo">
-            {pageState}
             <div className="infoBox">
-              <div className="heading">
-                Discover innovative ways to decorate
-              </div>
-              <div className="subheading">
-                We provide unmatched quality, comfort, and style for property
-                owners across the country. Our experts combine form and function
-                in bringing your vision to life. Create a room in your own style
-                with our collection and make your property a reflection of you
-                and what you love.
-              </div>
+              <div className="heading">{copy[pageState].heading}</div>
+              <div className="subheading">{copy[pageState].subheading}</div>
               <button className="shopBtn">
                 <div>SHOP NOW</div>
                 <img src={arrow}></img>
               </button>
             </div>
             <div className="btngrp">
-              <button className="pagebtn"
-              onClick={handleDecrement}>
+              <button className="pagebtn" onClick={handleDecrement}>
                 <img src={left}></img>
               </button>
               <button className="pagebtn" onClick={handleIncrement}>
