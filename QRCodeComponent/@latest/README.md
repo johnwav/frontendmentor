@@ -25,8 +25,9 @@ This is the first challenge on the Frontend Mentor challenge hub QR component
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://frontendmentor-wxj6.vercel.app/)
+
+- Live Site URL: (https://frontendmentor-wxj6-4sijfdsga-johnwav.vercel.app)
 
 ## My process
 
@@ -43,6 +44,6 @@ This is the first challenge on the Frontend Mentor challenge hub QR component
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/johnwav)
 - Twitter - [@badmanjwav](https://www.twitter.com/badmanjwav)
 
