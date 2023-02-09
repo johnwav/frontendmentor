@@ -26,7 +26,7 @@ nav {
 .navItem {
   cursor: pointer;
 }
-
+/* 
 .navItem::after {
   content: "";
   position: absolute;
@@ -42,10 +42,10 @@ nav {
 .navItem:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
-  }
+  } */
 
 
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 720px) {
   .navItems {
     display: none;
   }
