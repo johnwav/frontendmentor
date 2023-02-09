@@ -64,6 +64,9 @@
 .btngrp :hover {
   background: hsl(0, 0%, 63%);
 }
+.btngrp2 {
+  display: none;
+}
 
 .bottomSection {
   display: flex;
@@ -94,4 +97,49 @@
 .subheading2 {
   line-height: 1.5;
   font-size: 14.5px;
+}
+
+@media only screen and (max-width: 1230px) {
+  .topSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 100%;
+    min-height: 360px;
+  }
+
+  .infoBox,
+  .infobox2 {
+    width: 70%;
+    height: 100%;
+    padding-block: 60px;
+    /* padding-inline: 70px; */
+  }
+
+  .btngrp {
+    display: none;
+  }
+
+  .pagebtn{
+    overflow: hidden;
+  }
+
+  .btngrp2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -80px;
+    left: 32.6%;
+    overflow: hidden;
+  }
 }

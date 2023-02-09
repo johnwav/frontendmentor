@@ -48,17 +48,25 @@ function App() {
         <section className="topSection">
           {pageState === 0 ? (
             <>
-              <img src={topLeftImage}></img>
+              <img className="image" src={topLeftImage}></img>
+              <div className="btngrp2">
+              <button className="pagebtn" onClick={handleDecrement}>
+                <img src={left}></img>
+              </button>
+              <button className="pagebtn" onClick={handleIncrement}>
+                <img src={right}></img>
+              </button>
+            </div>
             </>
           ) : null}
           {pageState === 1 ? (
             <>
-              <img src={topLeftImage2}></img>
+              <img  className="image" src={topLeftImage2}></img>
             </>
           ) : null}
           {pageState === 2 ? (
             <>
-              <img src={topLeftImage3}></img>
+              <img className="image" src={topLeftImage3}></img>
             </>
           ) : null}
           <div className="topRightInfo">
@@ -81,7 +89,7 @@ function App() {
           </div>
         </section>
         <section className="bottomSection">
-          <img src={bottomLeftImage}></img>
+          <img className="image" src={bottomLeftImage}></img>
           <div className="bottomInfo">
             <center className="infobox2">
               <div className="heading2">ABOUT OUR FURNITURE</div>
@@ -98,7 +106,7 @@ function App() {
               </div>
             </center>
           </div>
-          <img src={bottomRightImage}></img>
+          <img className="image" src={bottomRightImage}></img>
         </section>
       </div>
     </div>
