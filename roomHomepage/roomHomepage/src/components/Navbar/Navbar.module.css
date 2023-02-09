@@ -43,3 +43,19 @@ nav {
   transform: scaleX(1);
   transform-origin: bottom left;
   }
+
+
+@media only screen and (max-width: 1230px) {
+  .navItems {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    margin-top: 62px;
+    padding-left: 50%;
+    position: absolute;
+  }
+
+  
+}

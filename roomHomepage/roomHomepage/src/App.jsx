@@ -50,23 +50,39 @@ function App() {
             <>
               <img className="image" src={topLeftImage}></img>
               <div className="btngrp2">
-              <button className="pagebtn" onClick={handleDecrement}>
-                <img src={left}></img>
-              </button>
-              <button className="pagebtn" onClick={handleIncrement}>
-                <img src={right}></img>
-              </button>
-            </div>
+                <button className="pagebtn" onClick={handleDecrement}>
+                  <img src={left}></img>
+                </button>
+                <button className="pagebtn" onClick={handleIncrement}>
+                  <img src={right}></img>
+                </button>
+              </div>
             </>
           ) : null}
           {pageState === 1 ? (
             <>
-              <img  className="image" src={topLeftImage2}></img>
+              <img className="image" src={topLeftImage2}></img>
+              <div className="btngrp2">
+                <button className="pagebtn" onClick={handleDecrement}>
+                  <img src={left}></img>
+                </button>
+                <button className="pagebtn" onClick={handleIncrement}>
+                  <img src={right}></img>
+                </button>
+              </div>
             </>
           ) : null}
           {pageState === 2 ? (
             <>
               <img className="image" src={topLeftImage3}></img>
+              <div className="btngrp2">
+                <button className="pagebtn" onClick={handleDecrement}>
+                  <img src={left}></img>
+                </button>
+                <button className="pagebtn" onClick={handleIncrement}>
+                  <img src={right}></img>
+                </button>
+              </div>
             </>
           ) : null}
           <div className="topRightInfo">
