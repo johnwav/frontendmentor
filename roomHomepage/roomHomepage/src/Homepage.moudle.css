@@ -122,7 +122,7 @@
     width: 70%;
     height: 100%;
     padding-block: 60px;
-    /* padding-inline: 70px; */
+    padding-inline: 20px;
   }
 
   .btngrp {
