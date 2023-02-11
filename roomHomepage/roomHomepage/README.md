@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://frontendmentor-ccqc.vercel.app)
-- Live Site URL: [Add live site URL here](https://frontendmentor-ccqc-acjibt80g-johnwav.vercel.app)
+- Solution URL: [solution URL](https://frontendmentor-ccqc.vercel.app)
+- Live Site URL: [live site URL](https://frontendmentor-ccqc-acjibt80g-johnwav.vercel.app)
 
 ## My process
 
