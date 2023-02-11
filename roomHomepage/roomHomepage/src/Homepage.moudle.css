@@ -68,6 +68,10 @@
   display: none;
 }
 
+.imagegrp{
+  max-height: 534px;
+}
+
 .bottomSection {
   display: flex;
   align-items: center;
