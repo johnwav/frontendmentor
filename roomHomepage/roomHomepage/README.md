@@ -46,6 +46,6 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/johnwav)
-- Twitter - [@yourusername](https://www.twitter.com/johnwav)
+- Frontend Mentor - [@johnwav](https://www.frontendmentor.io/profile/johnwav)
+- Twitter - [@johnwav](https://www.twitter.com/johnwav)
 
