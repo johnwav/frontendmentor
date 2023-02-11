@@ -47,7 +47,7 @@ function App() {
       <div className="bodyContainer">
         <section className="topSection">
           {pageState === 0 ? (
-            <>
+            <span className="imagegrp">
               <img className="image" src={topLeftImage}></img>
               <div className="btngrp2">
                 <button className="pagebtn" onClick={handleDecrement}>
@@ -57,10 +57,10 @@ function App() {
                   <img src={right}></img>
                 </button>
               </div>
-            </>
+            </span>
           ) : null}
           {pageState === 1 ? (
-            <>
+            <span className="imagegrp">
               <img className="image" src={topLeftImage2}></img>
               <div className="btngrp2">
                 <button className="pagebtn" onClick={handleDecrement}>
@@ -70,10 +70,10 @@ function App() {
                   <img src={right}></img>
                 </button>
               </div>
-            </>
+            </span>
           ) : null}
           {pageState === 2 ? (
-            <>
+            <span className="imagegrp">
               <img className="image" src={topLeftImage3}></img>
               <div className="btngrp2">
                 <button className="pagebtn" onClick={handleDecrement}>
@@ -83,7 +83,7 @@ function App() {
                   <img src={right}></img>
                 </button>
               </div>
-            </>
+            </span>
           ) : null}
           <div className="topRightInfo">
             <div className="infoBox">
@@ -106,6 +106,7 @@ function App() {
         </section>
         <section className="bottomSection">
           <img className="image" src={bottomLeftImage}></img>
+
           <div className="bottomInfo">
             <center className="infobox2">
               <div className="heading2">ABOUT OUR FURNITURE</div>
@@ -122,6 +123,7 @@ function App() {
               </div>
             </center>
           </div>
+
           <img className="image" src={bottomRightImage}></img>
         </section>
       </div>

@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  min-width: 600px;
 }
 .infoBox {
   width: 400px;
@@ -78,7 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  min-width: 600px;
 }
 .infobox2 {
   width: 476px;
@@ -133,13 +133,19 @@
     overflow: hidden;
   }
 
+  .imagegrp{
+    display: flex;
+    position: relative;
+
+  }
+
   .btngrp2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -80px;
-    left: 32.6%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     overflow: hidden;
   }
 }
